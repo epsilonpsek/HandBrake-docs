@@ -66,7 +66,7 @@ Additionally, the following filters will be run on the GPU when both hardware de
 
 It is common, particularly on lower-end hardware, for the CPU to be a bottleneck for the hardware video encoder. To minimize this effect, enable the hardware decoders, and disable any filters that you do not require and can't be run on the GPU.
 
-The VideoToolbox scaler can't properly scale the chroma channels, resulting in misplaced chroma positions (FB13755082). It's better to using it unless you need a low quality encode.
+The VideoToolbox scaler uses a different algorithm than HandBrake software scaler, the output will be less sharp.
 
 ## Advanced options
 
